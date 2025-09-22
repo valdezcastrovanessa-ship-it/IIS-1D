@@ -1,0 +1,12 @@
+distancia = int(input('Enter the distance in meters: '))
+minuto = int(input('Enter the minutes: '))
+segundos = int(input('Enter the seconds: '))
+centecimas = int(input('Enter the hundredths of a second: '))
+
+tse = (minuto * 60) + segundos + (centecimas / 100)
+
+vms = (distancia / tse)
+
+vkm = (vms * 3.6)
+
+print(f'\nLa velocidad es de {vkm} km/h')
